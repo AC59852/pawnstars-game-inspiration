@@ -1,0 +1,27 @@
+{
+  "firstNames": [
+    "John",
+    "Jane",
+    "Alex",
+    "Emily",
+    "Michael",
+    "Sarah",
+    "David",
+    "Laura",
+    "Chris",
+    "Anna"
+  ],
+
+  "lastNames": [
+    "Smith",
+    "Johnson",
+    "Brown",
+    "Taylor",
+    "Anderson",
+    "Thomas",
+    "Jackson",
+    "White",
+    "Harris",
+    "Martin"
+  ]
+}

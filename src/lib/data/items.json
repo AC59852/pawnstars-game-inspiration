@@ -1,0 +1,11 @@
+[
+  {
+    "id": "game",
+    "name": "Video Game",
+    "description": "A fun video game",
+    "price": 59.99,
+    "categories": ["Games", "Electronics"],
+    "condition": "New",
+    "rarity": "Common"
+  }
+]
