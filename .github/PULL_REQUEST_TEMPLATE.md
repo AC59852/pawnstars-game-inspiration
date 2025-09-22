@@ -1,3 +1,6 @@
+## Description of PR
+
+*Short description of what this PR is and what it aims to accomplish.*
 
 ## Type of PR
 
@@ -6,9 +9,6 @@
 - [ ] Broken PR
 - [ ] Security change
 
-## Description of PR
-
-*Short description of what this PR is and what it aims to accomplish.*
 
 ## Additional Context
 
