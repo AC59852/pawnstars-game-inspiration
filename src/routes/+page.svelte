@@ -1,12 +1,21 @@
 <script lang="ts">
   import { money, customers } from "$lib/store";
-  import { generateNewCustomer } from "$lib/logic/customer";
 
   $: console.log($customers);
 
+  async function generateNewCustomer() {
+    const response = await fetch('/api/customer');
+    const data = await response.json();
+
+    console.log('Generated customer:', data);
+    return data;
+  }
+
 </script>
 
-<button on:click={() => customers.update(c => [...c, generateNewCustomer()])}>
+<button on:click={async () => {
+  const customer = await generateNewCustomer();
+  customers.update(c => [...c, customer]);
+}}>
   Add Customer
 </button>
-

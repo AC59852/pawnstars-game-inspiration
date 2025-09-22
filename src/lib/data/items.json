@@ -3,9 +3,36 @@
     "id": "game",
     "name": "Video Game",
     "description": "A fun video game",
-    "price": 59.99,
+    "price": 60,
     "categories": ["Games", "Electronics"],
     "condition": "New",
     "rarity": "Common"
+  },
+  {
+    "id": "guitar",
+    "name": "Electric Guitar",
+    "description": "A classic electric guitar",
+    "price": 500,
+    "categories": ["Musical Instruments", "Electronics"],
+    "condition": "Used",
+    "rarity": "Rare"
+  },
+  {
+    "id": "comic",
+    "name": "Vintage Comic Book",
+    "description": "A rare vintage comic book",
+    "price": 228,
+    "categories": ["Collectibles", "Books"],
+    "condition": "Used",
+    "rarity": "Epic"
+  },
+  {
+    "id": "watch",
+    "name": "Luxury Watch",
+    "description": "A high-end luxury watch",
+    "price": 1366,
+    "categories": ["Accessories", "Luxury"],
+    "condition": "New",
+    "rarity": "Legendary"
   }
 ]
