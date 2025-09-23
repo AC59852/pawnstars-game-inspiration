@@ -37,13 +37,9 @@ export function generateNewCustomer(): Customer {
     const rule = getPricingRule(knowledge, modifiers);
     const roll = Math.random();
 
-    if (rule.belowChance && roll < rule.belowChance) {
-      return +(basePrice * randomInRange(rule.belowRange!)).toFixed(0);
-    }
+    if (rule.belowChance && roll < rule.belowChance) { return +(basePrice * randomInRange(rule.belowRange!)).toFixed(0); }
 
-    if (rule.baseChance && roll < (rule.belowChance ?? 0) + rule.baseChance) {
-      return basePrice; // exact base price
-    }
+    if (rule.baseChance && roll < (rule.belowChance ?? 0) + rule.baseChance) { return basePrice; }
 
     return +(basePrice * randomInRange(rule.aboveRange!)).toFixed(0);
   }

@@ -5,8 +5,11 @@
     "description": "A fun video game",
     "price": 60,
     "categories": ["Games", "Electronics"],
+    "placedOn": "Shelf",
     "condition": "New",
-    "rarity": "Common"
+    "image": "common-game.png",
+    "rarity": "Common",
+    "space": 1
   },
   {
     "id": "guitar",
@@ -14,8 +17,11 @@
     "description": "A classic electric guitar",
     "price": 500,
     "categories": ["Musical Instruments", "Electronics"],
+    "placedOn": "Floor",
     "condition": "Used",
-    "rarity": "Rare"
+    "image": "rare-guitar.png",
+    "rarity": "Rare",
+    "space": 1
   },
   {
     "id": "comic",
@@ -23,8 +29,11 @@
     "description": "A rare vintage comic book",
     "price": 228,
     "categories": ["Collectibles", "Books"],
+    "placedOn": "Shelf",
     "condition": "Used",
-    "rarity": "Epic"
+    "rarity": "Epic",
+    "image": "epic-comic.png",
+    "space": 1
   },
   {
     "id": "watch",
@@ -32,7 +41,32 @@
     "description": "A high-end luxury watch",
     "price": 1366,
     "categories": ["Accessories", "Luxury"],
+    "placedOn": "Shelf",
     "condition": "New",
-    "rarity": "Legendary"
+    "image": "legendary-watch.png",
+    "rarity": "Legendary",
+    "space": 1
+  },
+  {
+    "id": "bike",
+    "name": "Mountain Bike",
+    "description": "A sturdy mountain bike",
+    "price": 300,
+    "categories": ["Sports", "Outdoors"],
+    "placedOn": "Floor",
+    "condition": "Used",
+    "rarity": "Uncommon",
+    "space": 2
+  },
+  {
+    "id": "painting",
+    "name": "Abstract Painting",
+    "description": "A beautiful abstract painting",
+    "price": 750,
+    "categories": ["Art", "Decor"],
+    "placedOn": "Wall",
+    "condition": "New",
+    "rarity": "Rare",
+    "space": 2
   }
 ]
