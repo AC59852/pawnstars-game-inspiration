@@ -45,6 +45,7 @@ export function generateNewCustomer(): Customer {
   }
 
   return {
+    id: crypto.randomUUID(),
     name: `${firstName} ${lastName}`,
     patience: patience,
     knowledge: knowledge,
