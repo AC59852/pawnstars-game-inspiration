@@ -1,4 +1,5 @@
 export type Customer = {
+  id: string;
   name: string;
   patience: number;
   knowledge: number;
