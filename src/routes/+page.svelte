@@ -1,7 +1,9 @@
 <script lang="ts">
-  import { customers } from "$lib/store";
+  import { customers, negotiationState } from "$lib/store";
+	import type { Item } from "$lib/types/item";
   import { onMount } from "svelte";
   import { get } from "svelte/store";
+  import NegotiationComponent from "$lib/components/NegotiationComponent.svelte";
 
   let interval: NodeJS.Timeout | null = null;
 
@@ -44,7 +46,11 @@
     };
   });
 </script>
-<div>
+<div class="{$negotiationState.active ? 'overflow-hidden h-screen' : ''}">
+  {#if $negotiationState.active}
+    <NegotiationComponent />
+  {/if}
+
   <h2>Waiting Customers</h2>
   {#if $customers.length === 0}
     <p>No customers waiting.</p>
@@ -52,8 +58,10 @@
     <ul>
       {#each $customers as customer (customer.id)}
         <li>
-          <h2>{customer.name} is selling: {customer.selling.item.name}</h2>
-          <img src="/images/customers/customer-woman1.png" alt="" />
+          <button type="button" on:click={() => negotiationState.set({ active: true, currentCustomer: customer, item: customer.selling.item, offer: null, counterOffer: null })}>
+            <h2>{customer.name} is selling: {customer.selling.item.name}</h2>
+            <img src="/images/customers/customer-woman1.png" alt="" />
+          </button>
         </li>
       {/each}
     </ul>
