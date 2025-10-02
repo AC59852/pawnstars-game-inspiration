@@ -13,6 +13,9 @@ export type Customer = {
       categories: string[];
       condition: string;
       rarity: string;
+      image: string;
+      space: number;
+      placedOn: string;
     };
     askingPrice: number;
   };

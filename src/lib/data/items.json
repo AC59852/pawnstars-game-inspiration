@@ -48,25 +48,39 @@
     "space": 1
   },
   {
-    "id": "bike",
-    "name": "Mountain Bike",
-    "description": "A sturdy mountain bike",
-    "price": 300,
-    "categories": ["Sports", "Outdoors"],
-    "placedOn": "Floor",
+    "id": "tony-hawk-signed-skateboard",
+    "name": "Tony Hawk Signed Skateboard",
+    "description": "A skateboard signed by Tony Hawk",
+    "price": 685,
+    "categories": ["Sports", "Collectibles"],
+    "placedOn": "Wall",
     "condition": "Used",
-    "rarity": "Uncommon",
-    "space": 2
+    "image": "tony-hawk-signed-skateboard.png",
+    "rarity": "Epic",
+    "space": 1
   },
   {
-    "id": "painting",
-    "name": "Abstract Painting",
-    "description": "A beautiful abstract painting",
-    "price": 750,
-    "categories": ["Art", "Decor"],
-    "placedOn": "Wall",
+    "id": "presidential-cigar-box",
+    "name": "Presidential Cigar Box",
+    "description": "A luxurious cigar box once owned by a president",
+    "price": 60000,
+    "categories": ["Collectibles", "Luxury"],
+    "placedOn": "Shelf",
     "condition": "New",
-    "rarity": "Rare",
-    "space": 2
+    "image": "presidential-cigar-box.png",
+    "rarity": "Legendary",
+    "space": 1
+  },
+  {
+    "id": "mummy-mask",
+    "name": "Ancient Mummy Mask",
+    "description": "A rare ancient mummy mask from Egypt",
+    "price": 10897,
+    "categories": ["Collectibles", "Antiques"],
+    "placedOn": "Wall",
+    "condition": "Used",
+    "image": "mummy-mask.png",
+    "rarity": "Epic",
+    "space": 1
   }
 ]
